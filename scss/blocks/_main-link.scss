@@ -1,0 +1,18 @@
+.main-link{
+  font-family: "Space mono", sans-serif;
+  text-decoration: none;
+  text-transform: capitalize;
+  min-width: 180px;
+  padding: 14px 39px;
+  background-color: $yellow;
+  color: $white;
+
+  &:hover{
+    background-color: transparent;
+    border: 2px $yellow solid;
+    color: $yellow;
+    padding: 12px 37px;
+    // padding: 0;
+    // transform: scale(1, 2);
+  }
+}

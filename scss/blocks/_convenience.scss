@@ -1,0 +1,166 @@
+.convenience{
+  margin-top: 160px;
+}
+
+.convenience__list {
+  @include style-list;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  
+  &::before{
+    @include before-after;
+    width: 973px;
+    height: 15px;
+    background-color: #E5ECF4;
+    position: absolute;
+    transform: translate( -25%, 250%)
+  }
+}
+
+.convenience__item {
+  max-width: 350px;
+  margin-right: 30px;
+  position: relative;
+  z-index: 1;
+
+  &:last-child{
+    margin-right: 0;
+  }
+}
+
+.convenience__item--mobile::before,
+.convenience__item--scooter::before,
+.convenience__item--scooter-ride::before{
+  @include before-after;
+  background-color: $yellow;
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.convenience__item--mobile::before{
+  background-image: url(../../img/phone-icon.svg);
+}
+
+.convenience__item--scooter::before{
+  background-image: url(../../img/scooter-icon.svg);
+}
+
+.convenience__item--scooter-ride::before{
+  background-image: url(../../img/scooter-ride.svg);
+}
+
+
+.convenience__item-title {
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 27px;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.convenience__item-description {
+  margin: 0;
+}
+
+
+@media only screen and (max-width: $tablet) {
+  .convenience{
+    margin-top: 116px;
+  }
+
+  .convenience__list {
+    flex-direction: column;
+    align-items: center;
+
+    
+    &::before{
+      @include before-after;
+      width: 512px;
+      height: 15px;
+      background-color: #E5ECF4;
+      position: absolute;
+      right: 47%;
+      top: 30%;
+      transform: rotate(90deg);
+    }
+  }
+
+  .convenience__item {
+    max-width: 100%;
+    margin:0;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: flex-start;    
+  
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+
+  .convenience__item-content{
+    max-width: 398px;
+    margin-left: 79px;
+  }
+
+  .convenience__item-title {
+    margin: 0;
+    margin-bottom: 27px;
+  }
+}
+
+
+@media only screen and (max-width: $mobile) {
+  .convenience{
+    margin-top: 120px;
+  }
+
+  .convenience__list::before{
+      display: none;
+  }
+
+  .convenience__item {
+    margin:0;
+    margin-bottom: 48px;
+    flex-direction: column;
+    align-items: center;    
+  }
+
+  .convenience__item-content{
+    text-align: center;
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .convenience__item-title {
+    margin-top: 24px;
+  }
+
+  .convenience__item--mobile::before,
+.convenience__item--scooter::before,
+.convenience__item--scooter-ride::before{
+  width: 56px;
+  height: 56px;
+}
+
+.convenience__item--mobile::before{
+  background-size: 23px 28px;
+}
+
+.convenience__item--scooter::before{
+  background-size: 25px 19px;
+}
+
+.convenience__item--scooter-ride::before{
+  background-size: 24px 24px;
+}
+}

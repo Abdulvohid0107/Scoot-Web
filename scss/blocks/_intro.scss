@@ -1,0 +1,183 @@
+.intro{
+  background: url(../../img/intro-img-desctop.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px){
+    .intro{
+      background: url("../../img/intro-img-desctop@2x.jpg") no-repeat;
+      background-size: cover;
+    }
+  }
+
+.intro__container{
+  max-width: 500px;
+  padding-top: 153px;
+  padding-bottom: 152px;
+}
+
+.intro__title{
+  margin: 0;
+  font-family: 'Space Mono';
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: $white;
+}
+
+.intro__items-wrapper{
+  margin-top: 40px;
+  padding-left: 97px;
+}
+
+.intro__description{
+  position: relative;
+  margin: 0;
+  color: $white;
+  margin-bottom: 40px;
+  
+  &::before,
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  &::before{
+    background-image: url(../../img/line-intro.svg);
+    width: 204px;
+    height: 15px;
+    bottom: 0;
+    left: 0;
+    transform: translate( calc(-100% - 57px), -300%);  
+  }
+
+  &::after{
+    content: '';
+    display: block;
+    background-image: url(../../img/arrow-intro.svg);
+    width: 452px;
+    height: 151px;
+    position: absolute;
+    left: 0;
+    transform: translate(100%, -40%);
+  }
+}
+
+
+@media only screen and (max-width: $tablet) {
+  .intro{
+    background: url("../../img/intro-img-tablet.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min-resolution: 192dpi) and (min-width: 320px),
+    only screen and (min-resolution: 2dppx) and (min-width: 320px){
+      .intro{
+        background: url("../../img/intro-img-tablet@2x.jpg") no-repeat;
+        background-size: cover;
+      }
+    }
+
+  .intro__container{
+  max-width: 100%;
+  padding-top: 137px;
+  padding-bottom: 217px;
+  }
+
+  .intro__title{
+    text-align: center;
+  }
+
+  .intro__items-wrapper{
+    margin-top: 24px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro__description{
+    position: relative;
+    text-align: center;
+    margin-bottom: 34px;
+  
+    &::before{
+      display: none;
+    }
+
+    &::after{
+      content: '';
+      display: block;
+      background-image: url(../../img/arrow-intro.svg);
+      width: 452px;
+      height: 151px;
+      right: 0;
+      top: 0;
+      transform: translate(-50%, calc(100% + 40px));
+    }
+  }
+
+}  
+
+
+@media only screen and (max-width: $mobile) {
+  .intro{
+    background: url("../../img/intro-img-mobile.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min-resolution: 192dpi) and (min-width: 320px),
+    only screen and (min-resolution: 2dppx) and (min-width: 320px){
+      .intro{
+        background: url("../../img/intro-img-mobile@2x.jpg") no-repeat;
+        background-size: cover;
+      }
+    }
+
+
+  .intro__container{
+    padding-top: 115px;
+    padding-bottom: 179px;
+  }
+
+  .intro__title{
+  font-size: 40px;
+  line-height: 40px;
+  letter-spacing: -1.78571px;
+  }
+
+  .intro__description::after{
+      content: '';
+      display: block;
+      background-image: url(../../img/arrow-intro.svg);
+      width: 452px;
+      height: 151px;
+      right: 0;
+      top: 0;
+      transform: translate(-86%, calc(100% + 40px));
+    }
+  }

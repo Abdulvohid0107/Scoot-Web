@@ -1,0 +1,35 @@
+.nav__list{
+  @include style-list;
+  display: flex;
+}
+
+.nav__item{
+  color: $light-grey;
+  transition: 0.5s ease all;
+
+  &:last-child{
+    margin-right: 0;
+  }
+
+  &:hover{
+    color: $yellow;
+  }
+}
+
+.nav__item-link{
+  font-family: "Space mono";
+  text-decoration: none;
+  color: inherit;
+  text-transform: capitalize;
+}
+
+
+@media only screen and (max-width: $mobile) {
+  .nav{
+    flex-direction: column;
+  }
+
+  .nav__list{
+    flex-direction: column;
+  }
+}
