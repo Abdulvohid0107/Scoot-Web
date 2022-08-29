@@ -79,3 +79,50 @@
   display: block;
   animation: faqs-item-open 0.9s ease;
 }
+
+@media only screen and (max-width: $tablet) {
+
+  @keyframes faqs-item-open {
+    0%{
+      transform: translateY(-30%);
+    }
+  }
+  
+  .faqs-item__description--opened{
+    display: block;
+    animation: faqs-item-open 0.9s ease;
+  }
+
+  .faqs-item{
+    padding: 32px 32px 32px 40px;
+  
+    &:nth-child(2n){
+      margin: 24px 0;
+    }
+  }
+}
+
+
+@media only screen and (max-width: $mobile) {
+
+  @keyframes faqs-item-open {
+    0%{
+      transform: translateY(-17%);
+    }
+  }
+  
+  .faqs-item__description--opened{
+    display: block;
+    animation: faqs-item-open 0.9s ease;
+  }
+
+  .faqs-item{
+    padding: 32px 28px 32px 32px;
+  }
+
+  .faqs-item__title{
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.803571px;
+  }
+}
