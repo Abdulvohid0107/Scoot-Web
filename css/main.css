@@ -1294,29 +1294,15 @@ template {
     text-align: center;
   }
 }
-.benefits {
-  margin-top: 200px;
-  margin-bottom: 104px;
-  overflow: hidden;
-}
-
-.benefits__list {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-}
-
 @media only screen and (max-width: 1140px) {
-  .benefits {
-    height: 2650px;
-    margin-top: 145px;
+  .benefits-about {
+    height: 1650px;
   }
 }
 @media only screen and (max-width: 603px) {
-  .benefits {
-    height: 2400px;
-    overflow: hidden;
-    padding-top: 10px;
+  .benefits-about {
+    margin-top: 72px;
+    height: 1400px;
   }
 }
 .benefits-item {
@@ -1495,6 +1481,107 @@ template {
     top: 0;
     right: 0;
     transform: translate(75%, 25%);
+  }
+}
+.values__title {
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  letter-spacing: -2.14286px;
+  color: #495567;
+}
+
+.values__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 103px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .values__list {
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 105px;
+  }
+}
+@media only screen and (max-width: 603px) {
+  .values__list {
+    margin-top: 64px;
+  }
+}
+.value-item {
+  margin-right: 30px;
+  text-align: center;
+  max-width: 350px;
+}
+.value-item:last-child {
+  margin-right: 0;
+}
+
+.value-item__content {
+  margin-top: -40px;
+  position: relative;
+  z-index: 5;
+}
+
+.value-item__img {
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.value-item__number {
+  margin: 0;
+  margin: 0 auto;
+  width: 96px;
+  height: 96px;
+  background-color: #FCB72B;
+  border-radius: 50%;
+  padding: 34px;
+}
+
+.value-item__number-span {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: #495567;
+}
+
+.value-item__title {
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: -1.07143px;
+  color: #495567;
+  margin: 32px;
+  margin-bottom: 27px;
+}
+
+.value-item__description {
+  margin: 0;
+}
+
+@media only screen and (max-width: 1140px) {
+  .value-item {
+    margin-right: 0;
+    max-width: 457px;
+  }
+  .value-item:nth-child(2n) {
+    margin-top: 55px;
+    margin-bottom: 55px;
   }
 }
 .footer {

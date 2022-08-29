@@ -7,27 +7,40 @@
 //   @include style-list;
 // }
 
-.benefits{
-  margin-top: 200px;
-  margin-bottom: 104px;
-  overflow: hidden;
-}
+// .benefits{
+//   margin-top: 200px;
+//   margin-bottom: 104px;
+//   overflow: hidden;
+// }
 
-.benefits__list{
-  @include style-list;
-}
+// .benefits__list{
+//   @include style-list;
+// }
+
+// @media only screen and (max-width: $tablet) {
+//  .benefits{
+//   height: 2650px;
+//   margin-top: 145px;
+//  } 
+// }
+
+// @media only screen and (max-width: $mobile) {
+//   .benefits{
+//     height: 2400px;
+//     overflow: hidden;
+//     padding-top: 10px;
+//   }
+// }
 
 @media only screen and (max-width: $tablet) {
- .benefits{
-  height: 2650px;
-  margin-top: 145px;
- } 
+  .benefits-about{
+    height: 1650px;
+  }
 }
 
 @media only screen and (max-width: $mobile) {
-  .benefits{
-    height: 2400px;
-    overflow: hidden;
-    padding-top: 10px;
+  .benefits-about{
+    margin-top: 72px;
+    height: 1400px;
   }
 }
