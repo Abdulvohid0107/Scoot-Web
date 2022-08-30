@@ -1,0 +1,84 @@
+.intro-career {
+  background: url(../../img/intro-career.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 72px 0;
+}
+
+@media
+  only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+  only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+  only screen and (min-resolution: 192dpi) and (min-width: 320px),
+  only screen and (min-resolution: 2dppx) and (min-width: 320px){
+    .intro-career{
+      background: url("../../img/intro-career@2x.jpg") no-repeat center center;
+      background-size: cover;
+    }
+  }
+
+.intro-career__title {
+  margin: 0;
+  font-family: 'Space Mono', monospace !important;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+
+
+@media only screen and (max-width: $tablet) {
+  .intro-career {
+    background: url(../../img/intro-career-tablet.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 72px 0;
+  }
+  
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min-resolution: 192dpi) and (min-width: 320px),
+    only screen and (min-resolution: 2dppx) and (min-width: 320px){
+      .intro-career{
+        background: url("../../img/intro-career-tablet@2x.jpg") no-repeat center center;
+        background-size: cover;
+      }
+    }
+  
+}
+
+
+@media only screen and (max-width: $mobile) {
+  .intro-career {
+    background: url(../../img/intro-career-mobile.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 72px 0;
+  }
+  
+  @media
+    only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (-o-min-device-pixel-ratio: 2/1) and (min-width: 320px),
+    only screen and (min-device-pixel-ratio: 2) and (min-width: 320px),
+    only screen and (min-resolution: 192dpi) and (min-width: 320px),
+    only screen and (min-resolution: 2dppx) and (min-width: 320px){
+      .intro-career{
+        background: url("../../img/intro-career-mobile@2x.jpg") no-repeat center center;
+        background-size: cover;
+      }
+    }
+
+    .intro-career__title {
+      font-size: 40px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: -1.78571px;
+    }
+}

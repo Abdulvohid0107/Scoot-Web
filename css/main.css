@@ -1006,6 +1006,17 @@ template {
   transform: translateX(-35%);
 }
 
+.benefits-item__img-wrapper--mission::before {
+  content: "";
+  display: block;
+  background-image: url(../../img/arrow-girl.svg);
+  width: 740px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: -130px;
+}
+
 .benefits-item__img {
   border-radius: 50%;
   box-shadow: 509px 1px #E5ECF4;
@@ -1075,6 +1086,11 @@ template {
     width: 734px;
   }
 }
+@media only screen and (max-width: 690px) {
+  .benefits-item__img-wrapper--mission::before {
+    left: -85px;
+  }
+}
 @media only screen and (max-width: 603px) {
   .benefits-item__title {
     font-size: 32px;
@@ -1128,6 +1144,9 @@ template {
   }
   .benefits-item__img-wrapper--mobility::before {
     transform: rotateX(-180deg) translate(-4px, 30px);
+  }
+  .benefits-item__img-wrapper--mission::before {
+    left: 0;
   }
 }
 .sign-up {
@@ -1516,6 +1535,10 @@ template {
   .values__list {
     margin-top: 64px;
   }
+  .values__title {
+    font-size: 32px;
+    line-height: 32px;
+  }
 }
 .value-item {
   margin-right: 30px;
@@ -1801,6 +1824,163 @@ template {
     font-size: 18px;
     line-height: 24px;
     letter-spacing: -0.803571px;
+  }
+}
+.intro-career {
+  background: url(../../img/intro-career.jpg) no-repeat center center;
+  background-size: cover;
+  padding: 72px 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (min-resolution: 192dpi) and (min-width: 320px), only screen and (min-resolution: 2dppx) and (min-width: 320px) {
+  .intro-career {
+    background: url("../../img/intro-career@2x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+.intro-career__title {
+  margin: 0;
+  font-family: "Space Mono", monospace !important;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 56px;
+  letter-spacing: -2.5px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1140px) {
+  .intro-career {
+    background: url(../../img/intro-career-tablet.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 72px 0;
+  }
+}
+@media only screen and (max-width: 1140px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1140px) and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1140px) and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1140px) and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 1140px) and (min-resolution: 192dpi) and (min-width: 320px), only screen and (max-width: 1140px) and (min-resolution: 2dppx) and (min-width: 320px) {
+  .intro-career {
+    background: url("../../img/intro-career-tablet@2x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 603px) {
+  .intro-career {
+    background: url(../../img/intro-career-mobile.jpg) no-repeat center center;
+    background-size: cover;
+    padding: 72px 0;
+  }
+}
+@media only screen and (max-width: 603px) and (-webkit-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 603px) and (min–moz-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 603px) and (-moz-min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 603px) and (min-device-pixel-ratio: 2) and (min-width: 320px), only screen and (max-width: 603px) and (min-resolution: 192dpi) and (min-width: 320px), only screen and (max-width: 603px) and (min-resolution: 2dppx) and (min-width: 320px) {
+  .intro-career {
+    background: url("../../img/intro-career-mobile@2x.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+@media only screen and (max-width: 603px) {
+  .intro-career__title {
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -1.78571px;
+  }
+}
+.benefits-career {
+  margin-top: 120px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .benefits-career {
+    height: 850px;
+  }
+}
+@media only screen and (max-width: 603px) {
+  .benefits-career {
+    margin-top: 72px;
+    height: 800px;
+  }
+}
+.vacancies {
+  margin-top: 120px;
+  margin-bottom: 160px;
+}
+
+.vacancies__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.vacancies__item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  background: #F2F5F9;
+  margin-bottom: 24px;
+  padding: 32px 64px 35px 40px;
+}
+.vacancies__item:last-child {
+  margin-bottom: 0;
+}
+
+.vacancies__item-title {
+  margin: 0;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -1.07143px;
+  margin-bottom: 8px;
+}
+
+.vacancies__item-description {
+  margin: 0;
+}
+
+.vacancies__link {
+  padding: 14px 66px;
+}
+
+@media only screen and (max-width: 1140px) {
+  .vacancies {
+    margin-bottom: 120px;
+  }
+  .vacancies__item {
+    margin-bottom: 16px;
+    padding: 34px 48px;
+  }
+  .vacancies__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media only screen and (max-width: 603px) {
+  .vacancies {
+    margin-top: 145px;
+  }
+  .vacancies__item {
+    flex-direction: column;
+    margin-bottom: 16px;
+    padding: 36px 32px 32px;
+  }
+  .vacancies__item:last-child {
+    margin-bottom: 0;
+  }
+  .vacancies__item-content {
+    text-align: center;
+  }
+  .vacancies__item-title {
+    margin: 0;
+    font-family: "Space Mono", monospace;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.803571px;
+    margin-bottom: 8px;
+  }
+  .vacancies__link-wrapper {
+    margin-top: 20px;
+  }
+  .vacancies__link {
+    padding: 14px 60px;
   }
 }
 .footer {

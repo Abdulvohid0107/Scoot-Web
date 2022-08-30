@@ -86,6 +86,16 @@
   transform: translateX(-35%);
 }
 
+.benefits-item__img-wrapper--mission::before{
+  @include before-after;
+  background-image: url(../../img/arrow-girl.svg);
+  width: 740px;
+  height: 150px;
+  position: absolute;
+  bottom: 0;
+  left: -130px;
+}
+
 .benefits-item__img{
   border-radius: 50%;
   box-shadow: 509px 1px  #E5ECF4;
@@ -168,6 +178,12 @@
 }
 }
 
+@media only screen and (max-width: 690px) {
+  .benefits-item__img-wrapper--mission::before{
+    left: -85px;
+  }
+}
+
 @media only screen and (max-width: $mobile) {
   .benefits-item__title{
     @include mobile-heading-3;
@@ -219,5 +235,9 @@
 
   .benefits-item__img-wrapper--mobility::before{
     transform: rotateX(-180deg) translate(-4px, 30px);
+  }
+
+  .benefits-item__img-wrapper--mission::before{
+    left: 0;
   }
 }
